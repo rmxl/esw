@@ -12,17 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LLMInference"
         tools:targetApi="31">
+         <activity
+          android:name="com.google.mediapipe.examples.llminference.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight">
+       <intent-filter>
+           <action android:name="android.intent.action.MAIN" />
+           <category android:name="android.intent.category.LAUNCHER" />
+       </intent-filter>
+        </activity>
+            <!-- <activity
+            android:name="com.google.mediapipe.examples.llminference.SignUpActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.LLMInference">
+        </activity> -->
         <activity
             android:name="com.google.mediapipe.examples.llminference.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.LLMInference">
-            <intent-filter>
+            <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> -->
         </activity>
+
 
         <!-- Required to initialize the LlmInference -->
         <uses-native-library
