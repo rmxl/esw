@@ -6,4 +6,7 @@
     <string name="user_label">User</string>
     <string name="model_label">LLM</string>
     <string name="disclaimer">A recommender system</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+
 </resources>
