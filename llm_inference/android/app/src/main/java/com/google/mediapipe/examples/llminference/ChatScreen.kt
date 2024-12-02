@@ -1,5 +1,6 @@
 package com.google.mediapipe.examples.llminference
 
+import android.util.Log
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -21,17 +22,32 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 internal fun ChatRoute(
+    setting: Int,
     chatViewModel: ChatViewModel = viewModel(
         factory = ChatViewModel.getFactory(LocalContext.current.applicationContext)
     )
 ) {
-    val uiState by chatViewModel.uiState.collectAsStateWithLifecycle()
-    val textInputEnabled by chatViewModel.isTextInputEnabled.collectAsStateWithLifecycle()
-    ChatScreen(
-        uiState,
-        textInputEnabled
-    ) { message ->
-        chatViewModel.sendMessage(message)
+    if(setting == 1){
+        Log.d("ChatRoute", "Normal")
+        val uiState by chatViewModel.uiState.collectAsStateWithLifecycle()
+        val textInputEnabled by chatViewModel.isTextInputEnabled.collectAsStateWithLifecycle()
+        ChatScreen(
+            uiState,
+            textInputEnabled
+        ) { message ->
+            chatViewModel.sendMessage(message)
+        }
+    }
+    else{
+        val uiState by chatViewModel.uiState.collectAsStateWithLifecycle()
+        val textInputEnabled by chatViewModel.isTextInputEnabled.collectAsStateWithLifecycle()
+        ChatScreen(
+            uiState,
+            textInputEnabled
+        ) {
+//            chatViewModel.sendDefault()
+        }
+        Log.d("ChatRoute", "Default")
     }
 }
 

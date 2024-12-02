@@ -5,8 +5,7 @@
     <string name="action_send">Send</string>
     <string name="user_label">User</string>
     <string name="model_label">LLM</string>
-    <string name="disclaimer">A recommender system</string>
+    <string name="disclaimer">What do you want me to suggest?</string>
     <string name="logout">Logout</string>
     <string name="login">Login</string>
-
 </resources>

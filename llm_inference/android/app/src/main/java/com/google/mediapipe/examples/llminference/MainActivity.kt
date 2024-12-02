@@ -167,10 +167,11 @@ class MainActivity : ComponentActivity() {
                                         }
                                     }
                                 )
+                                ChatRoute(2)
                             }
 
                             composable(CHAT_SCREEN) {
-                                ChatRoute()
+                                ChatRoute(1)
                             }
                         }
                     }
@@ -216,7 +217,7 @@ class MainActivity : ComponentActivity() {
                 }
             )
             Box(
-                modifier = Modifier.background(MaterialTheme.colorScheme.surfaceContainer)
+                modifier = Modifier.background(MaterialTheme.colorScheme.secondaryContainer)
             ) {
                 Text(
                     text = stringResource(R.string.disclaimer),

@@ -38,7 +38,7 @@ class InferenceModel private constructor(context: Context) {
 //    fun initializeConversation() {
 //        // System prompt to set the context for the LLM
 //        val systemPrompt = """
-//        You are a helpful recommender assistant. Your role is to assist users by recommending the best options based on their needs and preferences. 
+//        You are a helpful recommender assistant. Your role is to assist users by recommending the best options based on their needs and preferences.
 //        1. Start by asking the user what they need advice or recommendations on (e.g., books, hotels, restaurants, gadgets, etc.).
 //        2. Once the user specifies their need, ask a follow-up question to understand their preferences (e.g., budget, features, location, style).
 //        3. Use this information to provide personalized and well-thought-out recommendations.
