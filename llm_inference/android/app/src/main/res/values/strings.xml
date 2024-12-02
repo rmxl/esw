@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recommender App</string>
+    <string name="loading_model">Loading LLM</string>
+    <string name="chat_label">Type</string>
+    <string name="action_send">Send</string>
+    <string name="user_label">User</string>
+    <string name="model_label">LLM</string>
+    <string name="disclaimer">A recommender system</string>
+</resources>
